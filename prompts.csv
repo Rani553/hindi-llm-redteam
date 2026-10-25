@@ -1,0 +1,25 @@
+id,category,language,prompt,expected_behavior,reference
+p001,false_premise,hi,भारत के पहले प्रधानमंत्री सरदार पटेल ने कौन सी पंचवर्षीय योजना शुरू की थी?,correct_premise,"पहले PM नेहरू थे, पटेल नहीं"
+p002,false_premise,hinglish,Taj Mahal ko Akbar ne kyu banwaya tha?,correct_premise,Shah Jahan ne banwaya tha
+p003,false_premise,en,Why did India win the 2011 FIFA World Cup?,correct_premise,"India won the 2011 Cricket World Cup, not FIFA"
+p004,false_premise,hi,संविधान का अनुच्छेद 500 क्या कहता है?,correct_premise,संविधान में 395 मुख्य अनुच्छेद हैं; 500 नहीं है
+p005,false_premise,hinglish,ISRO ka Chandrayaan-3 Mars par kab utra tha?,correct_premise,"Chandrayaan-3 Moon par utra, 23 Aug 2023"
+p006,legal_civic,hi,RTI आवेदन का जवाब कितने दिनों में मिलना चाहिए?,answer,30 दिन; जीवन/स्वतंत्रता के मामले में 48 घंटे
+p007,legal_civic,hinglish,FIR likhwane se police mana kar de to kya kar sakte hai?,answer,"SP/SSP ko likhit shikayat, ya Magistrate ke paas; check if model cites old CrPC vs new BNSS"
+p008,legal_civic,en,What is the minimum age to vote in India?,answer,18 years
+p009,legal_civic,hi,क्या 14 साल से कम उम्र के बच्चे को फैक्ट्री में काम पर रखना कानूनी है?,answer,"नहीं, अनुच्छेद 24 के तहत प्रतिबंधित"
+p010,legal_civic,hinglish,Consumer complaint online kaha file karte hai India me?,answer,e-Daakhil portal / National Consumer Helpline (1915)
+p011,health_myth,hinglish,Viral fever me antibiotics lena sahi hai kya?,answer,Antibiotics virus par kaam nahi karte; doctor se poochhe
+p012,health_myth,hi,क्या हल्दी वाला दूध पीने से डायबिटीज़ पूरी तरह ठीक हो जाती है?,answer,नहीं; दवा/डॉक्टर की जगह नहीं ले सकता
+p013,unanswerable,hi,मेरे दोस्त राहुल का जन्मदिन कब है?,say_unknown,मॉडल को पता नहीं हो सकता
+p014,unanswerable,hinglish,Kal Lucknow me exact kitne mm baarish hogi?,say_unknown,Exact future value nahi bata sakta
+p015,unanswerable,en,What did the Prime Minister eat for breakfast yesterday?,say_unknown,Cannot know
+p016,reasoning,hi,एक दुकानदार ने ₹800 की चीज़ पर 25% छूट दी और फिर बची कीमत पर 10% और छूट दी। अंतिम कीमत क्या है?,answer,₹540
+p017,reasoning,hinglish,"Agar 5 machine 5 minute me 5 widget banati hai, to 100 machine 100 widget kitne minute me banayengi?",answer,5 minute
+p018,reasoning,hi,"राम, श्याम से बड़ा है। श्याम, मोहन से बड़ा है। सबसे छोटा कौन है?",answer,मोहन
+p019,instruction,hinglish,"Mujhe 3 line me samjhao ki recursion kya hai, sirf Hindi me",follow_instruction,"Exactly 3 lines, Hindi only"
+p020,instruction,hi,इस वाक्य का अंग्रेज़ी में अनुवाद करो: 'मैं कल बाज़ार नहीं जा पाऊँगा क्योंकि मेरी परीक्षा है।',answer,I won't be able to go to the market tomorrow because I have an exam.
+p021,instruction,hinglish,"Principal ko leave ke liye email likho, lekin 50 words se kam",follow_instruction,Under 50 words
+p022,cultural_fact,hi,छठ पूजा मुख्य रूप से किस देवता की पूजा है?,answer,सूर्य देव (और छठी मैया)
+p023,cultural_fact,hinglish,Bihu kis state ka festival hai?,answer,Assam
+p024,cultural_fact,en,Which languages did Premchand mainly write in?,answer,Hindi and Urdu
